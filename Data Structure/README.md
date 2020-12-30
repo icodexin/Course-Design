@@ -1,7 +1,7 @@
-课程设计报告见博客：
+课程设计报告可见博客：
 
-+ CSDN：
-+ 个人博客：
++ CSDN：https://blog.csdn.net/HsingYang/article/details/111966060
++ 个人博客：https://www.xxdiandeng.cn/2020/11/28/course-design-of-data-structure/
 
 请在运行程序前，解压当前压缩包
 
