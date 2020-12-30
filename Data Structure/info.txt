@@ -1,0 +1,16 @@
+Computer Warehouse Data
+The information is as follows:
+Sort Way: 1 (Ascending by price)
+Total Type: 12
+RedmiBook-14 3299 30
+Dell-G5 5699 14
+Surface-Pro-7 5788 20
+Lenovo-Air14 5999 17
+Lenovo-R7000 6057 12
+Lenovo-Yoga14 6299 8
+Lenovo-Pro14 6299 10
+MiBook-Pro-15.6 6999 13
+Dell-G3 6999 15
+Dell-XPS13 8888 5
+MacBook-Pro-13 9199 5
+MacBook-Pro-16 17399 3
