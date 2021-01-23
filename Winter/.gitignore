@@ -1,0 +1,11 @@
+# build 目录
+build
+
+# vscode 工作目录
+.vscode
+
+# latex 编译中间文件
+*.aux
+*.log
+*.out
+*.synctex.gz
