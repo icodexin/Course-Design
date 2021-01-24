@@ -705,7 +705,7 @@ void ReMazepath(Pos start, Pos end) {
             int di = 0;
             while (di < 4) {
                 // 加入当前方块
-                S.push(Block{1, start, di});
+                S.push(Block{S.getSize() + 1, start, di});
                 // 下一位置
                 Pos next = NextPos(start, di);
                 // 避免来回走动
