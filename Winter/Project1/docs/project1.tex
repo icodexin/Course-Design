@@ -162,7 +162,6 @@
     坐标类函数成员：
     \begin{itemize}
         \item Pos()，构造函数，初始化一个坐标
-        \item Pos()，有参构造函数，指定初始化一个坐标
         \item operator==()，重载“==”运算符，用于判断两个位置是否相等
         \item to\_String()，将坐标信息转换为字符串
     \end{itemize}
@@ -174,8 +173,6 @@
     位置的东、南、西、北方向相邻的方块，我们只记录即将转向的方向值就可以了。
 
     于是，将坐标位置和“从此通道块走向下一通道块的方向”封装成一个通道块类。
-
-    规定，di的值为0、1、2、3，分别代表东、南、西、北。
 
     \begin{center}
         \begin{UMLClass}{10cm}{Block}
@@ -194,7 +191,7 @@
     \begin{itemize}
         \item ord，通道块在路径上的“序号”
         \item seat，通道块在迷宫中的“坐标”
-        \item 从此通道块走向下一通道块的方向
+        \item di，从此通道块走向下一通道块的方向，规定其值取0、1、2、3，分别代表东、南、西、北
     \end{itemize}
 
     通道块类函数成员：
@@ -264,7 +261,7 @@
 
     栈节点类的数据成员：
     \begin{itemize}
-        \item block，数据域
+        \item data，数据域
         \item next，指针域，指向下一节点
     \end{itemize}
 
@@ -366,7 +363,7 @@
             \caption{递归搜索}
             \label{alg2}
             \KwIn{入口位置 start, 出口位置 end}
-            \KwOut{迷宫矩阵的一条通路路径，或不存在通路}
+            \KwOut{迷宫矩阵的所有通路路径}
             \SetKwRepeat{Do}{do}{while}
             Stack S\;
             \SetKwFunction{path}{MazePath}
@@ -463,11 +460,11 @@ int Maze::getRow() {
 int Maze::getCol() {
     return c;
 }
-// 设置列数
+// 设置行数
 void Maze::setRow(int row){
     this->r = row;
 }
-// 设置行数
+// 设置列数
 void Maze::setCol(int col){
     this->c = col;
 }
@@ -873,11 +870,11 @@ void InputMaze() {
 
     \subsubsection{搜索失败}
 
-    入口：(1,1)，出口(9,3)，结果见图\ref{img:test2}。
+    入口：(1,1)，出口(8,3)，结果见图\ref{img:test2}。
 
     \begin{figure}[h]
         \centering
-        \includegraphics[width=0.7\textwidth]{测试结果6.png}
+        \includegraphics[width=0.8\textwidth]{测试结果6.png}
         \caption{非递归搜索 - 搜索失败}
         \label{img:test2}
     \end{figure}
