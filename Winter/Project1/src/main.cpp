@@ -91,7 +91,7 @@ int menu() {
          << "输入0-2:";
     while (true) {
         cin >> sn;
-        if (sn < 0 || sn > 3)
+        if (sn < 0 || sn > 2)
             cout << "输入错误，重选0－2:" << endl;
         else
             break;
