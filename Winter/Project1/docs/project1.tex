@@ -248,7 +248,7 @@
     栈节点类，组成栈结构的基本单元，此处选用链栈结构。
 
     \begin{center}
-        \begin{UMLClass}{8cm}{Node}
+        \begin{UMLClass}{8cm}{Node<T>}
             \attribute{- data: T}
             \attribute{- next: Node<T>*}
             \operation{+ Node()}
@@ -281,7 +281,7 @@
     这里使用栈的链式结构。
 
     \begin{center}
-        \begin{UMLClass}{8cm}{Stack}
+        \begin{UMLClass}{8cm}{Stack<T>}
             \attribute{- top: Node<T>*}
             \attribute{- size: int}
             \operation{+ Stack()}
