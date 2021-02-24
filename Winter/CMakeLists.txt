@@ -5,3 +5,5 @@ project(Winter)
 add_subdirectory("${PROJECT_SOURCE_DIR}/Project1")
 
 add_subdirectory("${PROJECT_SOURCE_DIR}/Project2")
+
+add_subdirectory("${PROJECT_SOURCE_DIR}/Project3")
